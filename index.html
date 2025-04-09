@@ -1,1 +1,83 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hi I'm Jose</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel = "icon" href = "images/favicon-transparent.ico" type = "image/png" />
+  </head>
+  <body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <div class="nav-item">
+              <a href="index.html">Home</a>
+            </div>
+          </li>
+          <li>
+            <div class="nav-item">
+              <a href="projects.html">Projects</a>
+            </div>
+          </li>
+          <li>
+            <div class="nav-item">
+              <a href="contact.html">Contact</a>
+            </div>
+          </li>
+          <!-- Resume list item triggers the modal pop-up -->
+          <li>
+            <div class="nav-item">
+              <a href="#" id="resumeBtn">Resume</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="container">
+      <section class="about-me">
+        <h1>Hi I'm Jose Armando Diaz</h1>
+        <h2>Computer Science Student at Northeastern Illinois University</h2>
+        <h3>a nerd with a passion for data and uncovering what is hidden within</h3>
+      </section>
+    </div>
+
+    <!-- Modal Popup for Resume -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>My Resume</h2>
+        <a href="resume.pdf" download class="btn-download">Download Resume</a>
+      </div>
+    </div>
+
+    <!-- JavaScript to control the modal behavior -->
+    <script>
+      const resumeBtn = document.getElementById('resumeBtn');
+      const modal = document.getElementById('modal');
+      const closeModal = document.querySelector('.modal .close');
+
+      // Open the modal when resume link is clicked
+      resumeBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        modal.style.display = 'block';
+      });
+
+      // Close when the "x" is clicked
+      closeModal.addEventListener('click', function () {
+        modal.style.display = 'none';
+      });
+
+      // Close the modal when clicking outside the content area
+      window.addEventListener('click', function (e) {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+    </script>
+  </body>
+</html>
