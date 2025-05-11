@@ -13,144 +13,35 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
-    font-family: Arial, sans-serif;
-    background-color: var(--main-bg-color);
-    color: var(--text-color);
-  }
-  
-  /* Layout adjusted: top-left third positioning */
-  .container {
-    margin-left: 270px;
-    padding: 6rem 4rem;
+    margin: 0;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    min-height: 100vh;
+    flex-direction:row;
+    height: 100vh;
   }
-  
-  /* Enlarged, spaced, and top-left aligned text */
-  .about-me {
-    max-width: 600px;
-  }
-  
-  .about-me h1 {
-    font-size: 2.8rem;
-    margin-bottom: 2rem;
-  }
-  
-  .about-me h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .about-me h3 {
-    font-size: 1.4rem;
-    margin-bottom: 3rem;
-    line-height: 1.6;
-  }
-  
-  /* Sidebar (navigation anchored at bottom) */
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    background-color: var(--main-bg-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 2rem 1rem;
-  }
-  
-  /* Navigation List */
-  .main-nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .nav-item {
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Blended button style: no borders, transparent bg until hover */
-  .nav-item a {
-    display: block;
-    padding: 12px 20px;
-    background-color: transparent;
-    border: none;
-    border-radius: 8px;
-    color: var(--text-color);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    text-align: center;
-    font-size: 1.1rem;
-  }
-  
-  .nav-item a:hover,
-  .nav-item a:active {
-    background-color: var(--btn-hover-bg);
-    backdrop-filter: blur(5px);
-    box-shadow: 0 0 10px var(--text-color);
-  }
-  
-  /* Modal Overlay */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 100;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--modal-overlay-bg);
-    backdrop-filter: blur(5px);
-  }
-  
-  /* Modal Box */
-  .modal-content {
-    background-color: var(--modal-content-bg);
-    margin: 10% auto;
-    padding: 30px;
-    border-radius: 12px;
-    width: 80%;
-    max-width: 500px;
-    box-shadow: var(--modal-shadow);
-    position: relative;
-    text-align: center;
-  }
-  
-  .modal-content h2 {
-    margin-bottom: 20px;
-  }
-  
-  .close {
-    position: absolute;
-    top: 12px;
-    right: 16px;
-    font-size: 28px;
-    cursor: pointer;
-    color: var(--text-color);
-  }
-  
-  /* Resume Download Button */
-  .btn-download {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    background: transparent;
-    border: none;
-    border-radius: 6px;
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-  }
-  
-  .btn-download:hover {
-    background: var(--btn-hover-bg);
-    box-shadow: 0 0 8px var(--text-color);
-  }
-  
+
+  header {
+  width: 250px;
+  background-color: #222;
+  color: whitesmoke;
+  padding: 1rem;
+}
+
+main {
+  flex: 1;
+  background-color: #222;
+  padding: 1rem;
+  color: whitesmoke;
+  text-align: center;
+}
+
+#navigation_list{
+  list-style: none;
+}
+
+#links_list{
+  list-style: none;
+  justify-content: space-between;
+  display: inline-flex;
+}
