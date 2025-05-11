@@ -1,83 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hi I'm Jose</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel = "icon" href = "images/favicon-transparent.ico" type = "image/png" />
-  </head>
-  <body>
-    <!-- Sidebar Navigation -->
-    <aside class="sidebar">
-      <nav class="main-nav">
-        <ul>
-          <li>
-            <div class="nav-item">
-              <a href="index.html">Home</a>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hi i'm Jose!!!</title>
+  <link rel="stylesheet" href = "styles/style.css">
+  
+</head>
+<body>
+  <header> <!-- header with basic information layout of the page and relevant links -->
+    <div class = "my_info">
+      <div class = "my_name">
+        <h1> Jose Armando, Diaz </h1>
+      </div>
+      <div class = "my_position">
+        <p>
+          NorthEastern Illinois Computer Science Senior and Software Developer
+        </p>
+      </div>
+      <div class = "navigation ">
+        <ul id = "navigation_list"> 
+          <li id = "about_item">
+            <a href = "#about">About</a>
           </li>
-          <li>
-            <div class="nav-item">
-              <a href="projects.html">Projects</a>
-            </div>
+          <li id = "projects_item">
+            <a href = "#projects">Projects</a>
           </li>
-          <li>
-            <div class="nav-item">
-              <a href="contact.html">Contact</a>
-            </div>
+          <li id = "experience_item">
+            <a href = "#experience">Experience</a>
           </li>
-          <!-- Resume list item triggers the modal pop-up -->
-          <li>
-            <div class="nav-item">
-              <a href="#" id="resumeBtn">Resume</a>
-            </div>
+          <li id = contact_item>
+            <a href = "#contact">Contact</a>
+          </li>
+          <li id = resume_item>
+            <a href = "#resume">Resume</a>
           </li>
         </ul>
-      </nav>
-    </aside>
-
-    <!-- Main Content Area -->
-    <div class="container">
-      <section class="about-me">
-        <h1>Hi I'm Jose Armando Diaz</h1>
-        <h2>Computer Science Student at Northeastern Illinois University</h2>
-        <h3>a nerd with a passion for data and uncovering what is hidden within</h3>
-      </section>
-    </div>
-
-    <!-- Modal Popup for Resume -->
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>My Resume</h2>
-        <a href="resume.pdf" download class="btn-download">Download Resume</a>
       </div>
+      <div class = "links">
+        <ul id = "links_list">
+          <li><a href = "">linkedIn</a></li>
+          <li><a href = "">HandShake</a></li>
+          <li><a href = "">GitHub</a></li>
+          <li><a href = "">leet code</a></li>
+        </ul>
+      </div>
+  </header>
+  <main> <!-- main container which will hold a discription projects experience and other information -->
+    <div class = "scrollable">
+      <h2>About</h2>
+      <div class = "about">
+
+      </div>
+      <h2>Projects</h2>
+      <div class = "projects">
+
+      </div>
+      <h2>Experience</h2>
+      <div class = "experience">
+
+      </div>
+      <div class = "contact">
+
+      </div>
+      <div class = "resume_download">
+
+      </div>
+
     </div>
 
-    <!-- JavaScript to control the modal behavior -->
-    <script>
-      const resumeBtn = document.getElementById('resumeBtn');
-      const modal = document.getElementById('modal');
-      const closeModal = document.querySelector('.modal .close');
+  </main>
+  <footer> 
 
-      // Open the modal when resume link is clicked
-      resumeBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        modal.style.display = 'block';
-      });
-
-      // Close when the "x" is clicked
-      closeModal.addEventListener('click', function () {
-        modal.style.display = 'none';
-      });
-
-      // Close the modal when clicking outside the content area
-      window.addEventListener('click', function (e) {
-        if (e.target === modal) {
-          modal.style.display = 'none';
-        }
-      });
-    </script>
-  </body>
+  </footer>
+</body>
 </html>
