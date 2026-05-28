@@ -1,432 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jose A, Diaz</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jose A. Diaz — Data &amp; ML Engineer</title>
+  <meta name="description" content="Jose A. Diaz — Computer Science graduate building data pipelines and applied machine learning systems." />
+  <link rel="icon" type="image/x-icon" href="images/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon_32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon_16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/favicon_180x180.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- React + Babel (for the Tweaks panel; site itself is plain HTML) -->
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<body data-density="regular">
 
+  <!-- ─── Top Nav ─────────────────────────────────────────────── -->
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a class="brand" href="#about">
+        <span class="dot">●</span>&nbsp;<span class="full">Jose A. Diaz</span>
+      </a>
+      <ul>
+        <li><a href="#about" data-nav>About</a></li>
+        <li><a href="#experience" data-nav>Experience</a></li>
+        <li><a href="#projects" data-nav>Projects</a></li>
+        <li><a href="#skills" data-nav>Skills</a></li>
+        <li><a href="#contact" data-nav>Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ─── About / Hero ───────────────────────────────────────── -->
     <section id="about">
-        <div class="hero-content">
-            <h1>Jose A, Diaz</h1>
-            <p class="subtitle">Building robust data pipelines & scalable solutions</p>
-            
-            <p class="bio">
-                Recent Computer Science graduate focused on data engineering and applied machine learning. 
-                Experienced in designing ETL pipelines, web scraping, API integration, and database management. 
-                I enjoy solving real world problems with data and building systems that make information accessible and useful.
-            </p>
+      <div class="wrap">
+        <div class="hero">
 
-            <p class="bio">
-                Outside of programming, you'll find me in the gym as both a competitive powerlifter and coach. 
-                Focused on getting athletes to realize strength goals through data driven solutions and powerlifting technique reviews.
-            </p>
+          <h1 class="hero-name">
+            Jose A. Diaz<span class="surname">.</span>
+          </h1>
 
-            <div class="hobbies">
-                <span class="hobby-tag">Powerlifting Coach & Competitor</span>
-                <span class="hobby-tag">Balloon Artist</span>
-                <span class="hobby-tag">Anime enjoyer</span>
-                
-            </div>
+          <p class="hero-positioning">
+            Recent CS graduate building robust data pipelines and applied machine&nbsp;learning systems &mdash; with a focus on making information accessible and useful.
+          </p>
+
+          <div class="hero-bio">
+            <p>I design ETL workflows, scrape and integrate APIs, and ship full-stack tooling to support the data. Recent work spans intrusion detection with XGBoost, NLP experiment suites in TensorFlow, and a .NET trip-planning app.</p>
+            <p>Outside of programming I&apos;m a competitive powerlifter and coach &mdash; same instinct, different domain: measure, iterate, get stronger.</p>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View Projects <span class="arrow">→</span></a>
+            <a href="docs/Jose_A_Diaz_resume.pdf" target="_blank" rel="noopener" class="btn">Resume <span class="arrow">↗</span></a>
+            <a href="/cdn-cgi/l/email-protection#e78d88948286958a86898388838e869d8e94898890a7808a868e8bc984888a" class="btn">Email <span class="arrow">↗</span></a>
+          </div>
+
         </div>
+      </div>
     </section>
 
+    <!-- ─── Experience ─────────────────────────────────────────── -->
     <section id="experience">
-        <h2>Experience</h2>
-        
-        <div class="experience-item">
-            <div class="job-title">
-                <div>
-                    <h3>Peer Leader</h3>
-                    <p class="company">Northeastern Illinois University</p>
-                </div>
-                <span class="date">2025-2025</span>
-            </div>
-            <div class="description">
-                <ul>
-                    <li>Selected as a peer leader to support programing students through structured workshops and individualized tutoring. 
-                        Regularly explained complex programming concepts, coached students through debugging strategies, 
-                        and reviewed code to build problem solving skills. Became a trusted point of contact for Python,
-                        Data Science, and Machine Learning related coursework.</li>
-                </ul>
-            </div>
-        </div>
+      <div class="wrap">
 
-        <div class="experience-item">
-            <div class="job-title">
-                <div>
-                    <h3>Project Intern</h3>
-                    <p class="company">Northeastern Illinois University</p>
-                </div>
-                <span class="date">2025</span>
-            </div>
-            <div class="description">
-                <ul>
-                    <li>
-                        Bridged communication between client and technical team, tranlating business requirements to actionable development tasks. 
-                        Designed and implemented ETL workflow and  Web Scraping pipeline to ingest external data.
-                        Integrated APIs and managed backend/database operations using python (flask). 
-                        Implemented front end features to support user experience for client needs.
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <header class="section-head">
+          <div class="label">
+            <div class="eyebrow">01 &nbsp;/&nbsp; Experience</div>
+          </div>
+          <div class="title">
+            <h2>Where I&rsquo;ve worked &mdash; teaching, building, shipping.</h2>
+          </div>
+        </header>
 
-        <div class="experience-item">
-            <div class="job-title">
-                <div>
-                    <h3>Project Intern</h3>
-                    <p class="company">Everyone Can Code Chicago (SER central states)</p>
+        <div class="cards">
+
+          <article class="card no-image">
+            <div class="card-body">
+              <div class="card-head">
+                <div class="left">
+                  <h3>Peer Leader</h3>
+                  <div class="org">Northeastern Illinois University</div>
                 </div>
-                <span class="date">2019</span>
+                <div class="date">2025</div>
+              </div>
+              <div class="summary">
+                <p>Selected to support programming students through structured workshops and 1:1 tutoring. Trusted point of contact for Python, Data Science, and ML coursework.</p>
+              </div>
+              <ul class="bullets">
+                <li><span>Coached students through debugging strategy and code review.</span></li>
+                <li><span>Explained complex concepts in plain language, built real problem-solving skills.</span></li>
+              </ul>
             </div>
-            <div class="description">
-                <ul>
-                    <li>
-                        Collaborated on a 4 person team to design and prototype a mobile application using Swift and Xcode. 
-                        Contributed to application architecture by designing data storage structures, integrating a google based database for user authentification, 
-                        and implemented a guided data collection flow to prepare users for the apps core functionality. 
-                        Worked closely with teammates to brainstorm and refine the application concept from idea to prototype.
-                    </li>
+          </article>
+
+          <article class="card no-image">
+            <div class="card-body">
+              <div class="card-head">
+                <div class="left">
+                  <h3>Project Intern</h3>
+                  <div class="org">Northeastern Illinois University</div>
+                </div>
+                <div class="date">2025</div>
+              </div>
+              <div class="summary">
+                <p>Bridged communication between client and technical team &mdash; translating business requirements into actionable development tasks.</p>
+              </div>
+              <ul class="bullets">
+                <li><span>Designed and implemented ETL workflow and web-scraping pipeline for external data ingest.</span></li>
+                <li><span>Integrated APIs and managed backend/database with Python (Flask).</span></li>
+                <li><span>Built front-end features to support core user flows.</span></li>
+              </ul>
+              <div class="stack">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">ETL</span>
+                <span class="tag">Web Scraping</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" style="grid-column: 1 / -1;">
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:0;">
+              <div class="thumb" style="border-right:1px solid var(--line); border-bottom:0;">
+                <img src="images\everyoneCanCode2019.avif" alt="Everyone Can Code Chicago 2019" />
+              </div>
+              <div class="card-body">
+                <div class="card-head">
+                  <div class="left">
+                    <h3>Project Intern</h3>
+                    <div class="org">Everyone Can Code Chicago &mdash; SER Central States</div>
+                  </div>
+                  <div class="date">2019</div>
+                </div>
+                <div class="summary">
+                  <p>Collaborated on a 4-person team to design and prototype a mobile app in Swift &amp; Xcode &mdash; from concept to working prototype.</p>
+                </div>
+                <ul class="bullets">
+                  <li><span>Designed data storage structures and integrated Google-based auth.</span></li>
+                  <li><span>Implemented a guided data-collection flow for first-time users.</span></li>
                 </ul>
+                <div class="stack">
+                  <span class="tag">Swift</span>
+                  <span class="tag">Xcode</span>
+                  <span class="tag">Firebase</span>
+                  <span class="tag">Prototype</span>
+                </div>
+              </div>
             </div>
+          </article>
+
         </div>
+      </div>
     </section>
 
+    <!-- ─── Projects ───────────────────────────────────────────── -->
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-item">
+      <div class="wrap">
 
-            <div class="project-title">
-                <h3>
-                    <a href="https://github.com/josediaz99/tripLog/tree/master">
-                        Trip Log
-                    </a>
-                </h3>
-                <span class="date">2025</span>
+        <header class="section-head">
+          <div class="label">
+            <div class="eyebrow">02 &nbsp;/&nbsp; Projects</div>
+          </div>
+          <div class="title">
+            <h2>Selected work &mdash; pipelines, models, full-stack apps.</h2>
+          </div>
+        </header>
+
+        <div class="cards">
+
+          <article class="card no-image">
+            <a class="link-out" href="https://github.com/josediaz99/tripLog/tree/master" target="_blank" rel="noopener" aria-label="View on GitHub">↗</a>
+            <div class="card-body">
+              <div class="card-head">
+                <div class="left">
+                  <h3><a href="https://github.com/josediaz99/tripLog/tree/master" target="_blank" rel="noopener">Trip Log</a></h3>
+                  <div class="org">Full-stack MVC web app</div>
+                </div>
+                <div class="date">2025</div>
+              </div>
+              <div class="summary">
+                <p>Plan, organize, and document travel experiences. Structured tools for managing destinations, accommodations, and activities in one place &mdash; persisted via EF Core to SQL Server.</p>
+              </div>
+              <ul class="bullets">
+                <li><span>CRUD for destinations, accommodations, activities.</span></li>
+                <li><span>Designed relational schema; ORM-based data access via EF Core.</span></li>
+                <li><span>Responsive UI built with Bootstrap and Razor views.</span></li>
+              </ul>
+              <div class="stack">
+                <span class="tag">ASP.NET Core 8</span>
+                <span class="tag">C#</span>
+                <span class="tag">EF Core</span>
+                <span class="tag">SQL Server</span>
+                <span class="tag">Bootstrap</span>
+              </div>
             </div>
+          </article>
 
-            <div class="tech-stack">
-                <strong>Tech Stack</strong>
-
-                <p>
-                    <strong>Backend:</strong><br>
-                    ASP.NET Core (.NET 8) • C# • Entity Framework Core 8
-                </p>
-
-                <p>
-                    <strong>Frontend:</strong><br>
-                    Razor Pages • Bootstrap • HTML/CSS
-                </p>
-
-                <p>
-                    <strong>Database:</strong><br>
-                    SQL Server
-                </p>
-
-                <p>
-                    <strong>Architecture:</strong><br>
-                    MVC Architecture
-                </p>
+          <article class="card no-image">
+            <a class="link-out" href="https://github.com/josediaz99/IntrusionDetectionSystem" target="_blank" rel="noopener" aria-label="View on GitHub">↗</a>
+            <div class="card-body">
+              <div class="card-head">
+                <div class="left">
+                  <h3><a href="https://github.com/josediaz99/IntrusionDetectionSystem" target="_blank" rel="noopener">DoS Intrusion Detection</a></h3>
+                  <div class="org">ML-driven network traffic analysis</div>
+                </div>
+                <div class="date">2025</div>
+              </div>
+              <div class="summary">
+                <p>Built an ML system to identify Denial-of-Service attacks in network traffic. Analyzed 78 flow-based features from the CIC-IDS2017 benchmark to distinguish benign from malicious patterns.</p>
+              </div>
+              <ul class="bullets">
+                <li><span>Designed an ETL pipeline for ingest and preprocessing.</span></li>
+                <li><span>Recursive feature reduction + standardization on cleaned flows.</span></li>
+                <li><span>Trained &amp; evaluated XGBoost and Logistic Regression for binary detection.</span></li>
+                <li><span>Documented engineering decisions via ADRs for reproducibility.</span></li>
+              </ul>
+              <div class="stack">
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">scikit-learn</span>
+                <span class="tag">XGBoost</span>
+                <span class="tag">ADR</span>
+              </div>
             </div>
+          </article>
 
-            <div class="description">
-
-                <strong>Project Overview</strong>
-
-                <p>
-                    Trip Log is a full-stack web application that helps users plan, organize, 
-                    and document travel experiences. The platform provides structured tools 
-                    for managing destinations, accommodations, and activities in one place.
-                </p>
-
-                <p>
-                    The application uses ASP.NET Core (.NET 8) with Entity Framework Core 
-                    to persist user data in a SQL Server database, while Bootstrap ensures 
-                    a responsive and user-friendly interface.
-                </p>
-
-                <strong>Key Contributions</strong>
-
-                <ul>
-                    <li>Developed a full-stack MVC web application using ASP.NET Core</li>
-                    <li>Implemented CRUD functionality for destinations, accommodations, and activities</li>
-                    <li>Designed and managed relational database schema with SQL Server</li>
-                    <li>Integrated Entity Framework Core for ORM-based data access</li>
-                    <li>Built responsive UI components using Bootstrap and Razor views</li>
-                </ul>
-
+          <article class="card no-image wide" style="grid-column: 1 / -1;">
+            <a class="link-out" href="https://github.com/josediaz99/NLP_tool_analysis" target="_blank" rel="noopener" aria-label="View on GitHub">↗</a>
+            <div class="card-body">
+              <div class="card-head">
+                <div class="left">
+                  <h3><a href="https://github.com/josediaz99/NLP_tool_analysis" target="_blank" rel="noopener">NLP Tool Analysis</a></h3>
+                  <div class="org">Sentiment-classification experiment suite</div>
+                </div>
+                <div class="date">2025</div>
+              </div>
+              <div class="summary">
+                <p>A structured suite measuring how preprocessing, feature extraction, model architecture, and summarization affect sentiment classification on IMDB reviews.</p>
+              </div>
+              <ul class="bullets">
+                <li><span><strong>Vectorizer analysis:</strong> Bag-of-Words vs. TF-IDF vs. Word2Vec.</span></li>
+                <li><span><strong>Deep learning:</strong> LSTM vs. BiLSTM (TensorFlow/Keras).</span></li>
+                <li><span><strong>Summarizer impact:</strong> original vs. summarized review prediction behavior.</span></li>
+                <li><span>End-to-end pipeline: extraction, tokenization, stop-word removal, stemming, padding, training, eval.</span></li>
+              </ul>
+              <div class="stack">
+                <span class="tag">Python</span>
+                <span class="tag">TensorFlow / Keras</span>
+                <span class="tag">scikit-learn</span>
+                <span class="tag">NLTK</span>
+                <span class="tag">beautifulsoup4</span>
+                <span class="tag">Jupyter</span>
+              </div>
             </div>
+          </article>
 
         </div>
-
-        <div class="project-item">
-
-            <div class="project-title">
-                <h3>
-                    <a href="https://github.com/josediaz99/IntrusionDetectionSystem">
-                        DoS Intrusion Detection System
-                    </a>
-                </h3>
-                <span class="date">2025</span>
-            </div>
-
-            <div class="tech-stack">
-                <strong>Tech Stack</strong>
-
-                <p>
-                    <strong>Languages & Libraries:</strong><br>
-                    Python (3.11) • Pandas • NumPy • Scikit-Learn • XGBoost
-                </p>
-
-                <p>
-                    <strong>Data Engineering:</strong><br>
-                    ETL pipeline design • Data cleaning • Data transformation
-                </p>
-
-                <p>
-                    <strong>Machine Learning:</strong><br>
-                    Binary classification • Feature engineering • Recursive feature reduction • Standardization • Model evaluation
-                </p>
-            </div>
-
-            <div class="description">
-                <strong>Project Overview</strong>
-
-                <p>
-                    Built a machine-learning–driven Intrusion Detection System to identify 
-                    Denial-of-Service (DoS) attacks in network traffic. The system analyzes 
-                    network flow data to distinguish benign activity from malicious patterns, 
-                    enabling faster detection of threats that could lead to service outages.
-                </p>
-
-                <p>
-                    Leveraged the <strong>CIC-IDS2017 dataset</strong>, a cybersecurity benchmark 
-                    simulating real enterprise traffic. Analyzed 78 numerical flow-based features 
-                    (packet length, timing metrics, flow duration) to understand behavioral 
-                    differences between attacks and normal traffic.
-                </p>
-
-                <p>
-                    Applied an <strong>Architectural Decision Record (ADR)</strong> framework 
-                    to document and justify engineering decisions for reproducibility.
-                </p>
-
-                <strong>Key Contributions</strong>
-
-                <ul>
-                    <li>Designed and implemented ETL pipeline for data ingestion and preprocessing</li>
-                    <li>Cleaned and staged network data using Pandas</li>
-                    <li>Researched and interpreted feature significance</li>
-                    <li>Performed feature reduction and standardization</li>
-                    <li>Trained and evaluated XGBoost and Logistic Regression models for binary DoS detection</li>
-                </ul>
-
-            </div>
-        </div>
-
-        <div class="project-item">
-
-            <div class="project-title">
-                <h3>
-                    <a href="https://github.com/josediaz99/NLP_tool_analysis">
-                        NLP tool analysis
-                    </a>
-                </h3>
-                <span class="date">2025</span>
-            </div>
-
-            <div class="tech-stack">
-                <strong>Tech Stack</strong>
-
-                <p>
-                    <strong>Languages & Libraries:</strong><br>
-                    Python • Pandas • NumPy • Scikit-Learn • TensorFlow/Keras, NLTK, jupyter Notebook, beautifulsoup4
-                </p>
-
-            </div>
-
-            <div class="description">
-                <strong>Project Overview</strong>
-                <p>
-                    This repository contains a structured NLP experimentation suite designed 
-                    to evaluate how different preprocessing techniques, feature extraction 
-                    methods, model architectures, and summarization tools impact sentiment 
-                    classification performance on IMDB movie reviews.
-                </p>
-                <p>
-                    <strong>Vectorizer Analysis</strong> compares three vectorization strategies — Bag of Words, 
-                    TF-IDF, and Word2Vec — to measure how representation learning 
-                    affects downstream classification metrics including accuracy, precision, 
-                    recall, and F1-score using Scikit-learn evaluation utilities.
-                </p>
-                <p>
-                    <strong>Deep learning analysis</strong> evaluates deep learning architectures by comparing LSTM 
-                    and Bidirectional LSTM (BiLSTM) models built with TensorFlow/Keras. 
-                    Performance was assessed using training/validation metrics and 
-                    classification reports to analyze convergence behavior and generalization.
-                </p>
-                <p>
-                    <strong>Summerizer's impact on sentiment analysis</strong> investigates the impact of text summarization on sentiment 
-                    classification predictions by comparing model outputs on original 
-                    versus summarized reviews, highlighting how preprocessing decisions 
-                    influence predictive reliability.
-                </p>
-                <p>
-                    Across all projects, I implemented an end-to-end NLP pipeline including 
-                    data extraction, preprocessing (tokenization, stopword removal, stemming), 
-                    staging of cleaned and raw datasets, sequence padding, model training, 
-                    and structured performance evaluation.
-                </p>
-
-            </div>
-        </div>        
+      </div>
     </section>
 
+    <!-- ─── Skills ─────────────────────────────────────────────── -->
     <section id="skills">
-        <h2>Skills</h2>
+      <div class="wrap">
 
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Programming</h3>
-                <div class="skill-list">
-                    <span class="skill-item">Python</span>
-                    <span class="skill-item">SQL</span>
-                    <span class="skill-item">Java</span>
-                    <span class="skill-item">C++</span>
-                    <span class="skill-item">C#</span>
-                    <span class="skill-item">JavaScript</span>
-                </div>
-            </div>
+        <header class="section-head">
+          <div class="label">
+            <div class="eyebrow">03 &nbsp;/&nbsp; Skills</div>
+          </div>
+          <div class="title">
+            <h2>Toolkit.</h2>
+          </div>
+        </header>
 
-            <div class="skill-category">
-                <h3>Databases</h3>
-                <div class="skill-list">
-                    <span class="skill-item">Supabase</span>
-                    <span class="skill-item">PostgreSQL</span>
-                    <span class="skill-item">MySQL</span>
-                    <span class="skill-item">MongoDB</span>
-                </div>
-            </div>
+        <div class="skills">
 
-            <div class="skill-category">
-                <h3>Tools & Others</h3>
-                <div class="skill-list">
-                    <span class="skill-item">GitHub</span>
-                    <span class="skill-item">Git</span>
-                    <span class="skill-item">FileZilla</span>
-                    <span class="skill-item">Eclipse</span>
-                    <span class="skill-item">MySQL Workbench</span>
-                    <span class="skill-item">VS Code</span>
-                    <span class="skill-item">Figma</span>
-                    <span class="skill-item">IntelliJ IDEA</span>
-                    <span class="skill-item">Excel</span>
-                    <span class="skill-item">Jupyter Notebook</span>
-                </div>
-            </div>
+          <div class="skill-group">
+            <div class="num">→ 03.01</div>
+            <h3>Programming</h3>
+            <ul>
+              <li><span class="ix">01</span><span>Python</span></li>
+              <li><span class="ix">02</span><span>SQL</span></li>
+              <li><span class="ix">03</span><span>Java</span></li>
+              <li><span class="ix">04</span><span>C++</span></li>
+              <li><span class="ix">05</span><span>C#</span></li>
+              <li><span class="ix">06</span><span>JavaScript</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <div class="num">→ 03.02</div>
+            <h3>Databases</h3>
+            <ul>
+              <li><span class="ix">01</span><span>PostgreSQL</span></li>
+              <li><span class="ix">02</span><span>MySQL</span></li>
+              <li><span class="ix">03</span><span>SQL Server</span></li>
+              <li><span class="ix">04</span><span>MongoDB</span></li>
+              <li><span class="ix">05</span><span>Supabase</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <div class="num">→ 03.03</div>
+            <h3>Tools &amp; Environments</h3>
+            <ul>
+              <li><span class="ix">01</span><span>Git &amp; GitHub</span></li>
+              <li><span class="ix">02</span><span>VS Code</span></li>
+              <li><span class="ix">03</span><span>IntelliJ IDEA</span></li>
+              <li><span class="ix">04</span><span>Jupyter Notebook</span></li>
+              <li><span class="ix">05</span><span>MySQL Workbench</span></li>
+              <li><span class="ix">06</span><span>Figma</span></li>
+              <li><span class="ix">07</span><span>Excel</span></li>
+            </ul>
+          </div>
+
         </div>
+
+        <div class="hobbies-strip" style="margin-top: var(--gap-xl);">
+          <span class="label">Off the clock</span>
+          <span class="hobby">Powerlifting Coach &amp; Competitor</span>
+          <span class="sep">·</span>
+          <span class="hobby">Balloon Artist</span>
+          <span class="sep">·</span>
+          <span class="hobby">Anime enjoyer</span>
+        </div>
+      </div>
     </section>
 
+    <!-- ─── Contact ────────────────────────────────────────────── -->
     <section id="contact">
-        <div class="contact-content">
-            <h2>Let's Connect</h2>
-            
-            <p class="contact-intro">
-                I'm always interested in hearing about new opportunities, collaborations, 
-                or just chatting about data engineering. Feel free to reach out!
-            </p>
+      <div class="wrap">
 
-            <a href="mailto:josearmandodiazisnow@gmail.com" class="contact-email">josearmandodiazisnow@gmail.com</a>
+        <header class="section-head">
+          <div class="label">
+            <div class="eyebrow">04 &nbsp;/&nbsp; Contact</div>
+          </div>
+          <div class="title">
+            <h2>Let&rsquo;s talk.</h2>
+          </div>
+        </header>
 
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/jose-diaz-is-now/" target="_blank" class="social-link">
-                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
-                        <!--linked in icon path-->
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                    LinkedIn
-                </a>
-
-                <a href="https://github.com/josediaz99" target="_blank" class="social-link">
-                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
-                        <!--github icon path-->
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                    GitHub
-                </a>
-
-            </div>
-
-            <div class="resume-links">
-
-                <a href="documents/Diaz_Jose_A_resume.docx.pdf" target="_blank" rel="noopener" class="resume-btn resume-btn--view">
-                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
-                    </svg>
-                    View Resume
-                </a>
-
-                <a href="documents/Diaz_Jose_A_resume.docx.pdf" download="Jose_Diaz_Resume.pdf" class="resume-btn resume-btn--download">
-                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
-                    </svg>
-                    Download Resume
-                </a>
-
-            </div>
-
+        <div class="contact">
+          <div class="lead">
+            Always interested in new opportunities, collaborations, or chatting about data&nbsp;engineering &mdash;
+            <a href="/cdn-cgi/l/email-protection#2a4045594f4b58474b444e454e434b50435944455d6a4d474b434604494547">say&nbsp;hello</a>.
+          </div>
+          <div class="meta">
+            <a href="/cdn-cgi/l/email-protection#ddb7b2aeb8bcafb0bcb3b9b2b9b4bca7b4aeb3b2aa9dbab0bcb4b1f3beb2b0">
+              <span>Email</span><span class="arr">↗</span>
+            </a>
+            <a href="https://www.linkedin.com/in/jose-diaz-is-now/" target="_blank" rel="noopener">
+              <span>LinkedIn</span><span class="arr">↗</span>
+            </a>
+            <a href="https://github.com/josediaz99" target="_blank" rel="noopener">
+              <span>GitHub</span><span class="arr">↗</span>
+            </a>
+            <a href="docs/Jose_A_Diaz_resume.pdf" target="_blank" rel="noopener">
+              <span>Resume (PDF)</span><span class="arr">↗</span>
+            </a>
+          </div>
         </div>
+
+      </div>
     </section>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+  </main>
 
-        // Active navigation highlighting
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section');
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
+  <footer>
+    <div class="wrap">
+      <div class="footer-inner">
+        <div class="left">© 2026 Jose A. Diaz &nbsp;·&nbsp; Built from scratch.</div>
+        <div class="right">Chicago, IL &nbsp;·&nbsp; <a href="/cdn-cgi/l/email-protection#0c66637f696d7e616d62686368656d76657f62637b4c6b616d6560226f6361"><span class="__cf_email__" data-cfemail="d7bdb8a4b2b6a5bab6b9b3b8b3beb6adbea4b9b8a097b0bab6bebbf9b4b8ba">[email&#160;protected]</span></a></div>
+      </div>
+    </div>
+  </footer>
 
-            document.querySelectorAll('nav a').forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').slice(1) === current) {
-                    link.style.color = 'var(--accent)';
-                } else {
-                    link.style.color = 'var(--text-secondary)';
-                }
-            });
-        });
-    </script>
+  <!-- ─── Smooth scroll + active nav highlighting ────────────── -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        if (id.length <= 1) return;
+        const target = document.querySelector(id);
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    const sections = [...document.querySelectorAll('main section')];
+    const navLinks = [...document.querySelectorAll('nav [data-nav]')];
+    const onScroll = () => {
+      const y = window.scrollY + window.innerHeight * 0.3;
+      let current = sections[0]?.id || '';
+      for (const s of sections) {
+        if (s.offsetTop <= y) current = s.id;
+      }
+      navLinks.forEach(l => {
+        l.classList.toggle('active', l.getAttribute('href') === '#' + current);
+      });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  </script>
+
+  <!-- ─── Tweaks panel (only renders when toolbar toggle is on) ─ -->
+  <div id="tweaks-root"></div>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel">
+    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "palette": [
+        "#0e0e10",
+        "#ededed",
+        "#3d5a3d"
+      ],
+      "accent": "#3d5a3d",
+      "fontPair": "geist",
+      "density": "regular"
+    }/*EDITMODE-END*/;
+
+    const FONT_PAIRS = {
+      geist:  { sans: '"Geist", "Inter", system-ui, sans-serif',          mono: '"Geist Mono", ui-monospace, monospace' },
+      inter:  { sans: '"Inter", system-ui, sans-serif',                    mono: '"JetBrains Mono", ui-monospace, monospace' },
+      jakarta:{ sans: '"Plus Jakarta Sans", system-ui, sans-serif',        mono: '"IBM Plex Mono", ui-monospace, monospace' },
+      serif:  { sans: '"Fraunces", Georgia, serif',                        mono: '"JetBrains Mono", ui-monospace, monospace' },
+    };
+
+    function ensureGoogleFont(family, weights) {
+      const id = 'gf-' + family.replace(/\W+/g,'-');
+      if (document.getElementById(id)) return;
+      const l = document.createElement('link');
+      l.id = id;
+      l.rel = 'stylesheet';
+      l.href = `https://fonts.googleapis.com/css2?family=${encodeURIComponent(family)}:wght@${weights.join(';')}&display=swap`;
+      document.head.appendChild(l);
+    }
+
+    function App() {
+      const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+
+      // Apply tweaks to :root vars
+      React.useEffect(() => {
+        const r = document.documentElement.style;
+        const [bg, ink, accent] = t.palette;
+        r.setProperty('--bg', bg);
+        r.setProperty('--ink', ink);
+        r.setProperty('--accent', t.accent);
+
+        // sensible derived tones
+        const isDark = ink.toLowerCase() === '#fafaf7' || bg.toLowerCase() === '#0e0e10' || bg.toLowerCase() === '#0a0a0a';
+        if (isDark) {
+          r.setProperty('--bg-elev', '#141417');
+          r.setProperty('--ink-soft', '#d6d6d2');
+          r.setProperty('--muted', '#8e8e88');
+          r.setProperty('--muted-2', '#5a5a55');
+          r.setProperty('--line', '#23232a');
+          r.setProperty('--line-2', '#33333c');
+        } else {
+          r.setProperty('--bg-elev', '#ffffff');
+          r.setProperty('--ink-soft', '#2c2c2a');
+          r.setProperty('--muted', '#6b6b66');
+          r.setProperty('--muted-2', '#a3a39d');
+          r.setProperty('--line', '#e6e6e0');
+          r.setProperty('--line-2', '#d4d4cd');
+        }
+      }, [t.palette, t.accent]);
+
+      // Font pairing
+      React.useEffect(() => {
+        const pair = FONT_PAIRS[t.fontPair] || FONT_PAIRS.geist;
+        if (t.fontPair === 'jakarta') ensureGoogleFont('Plus+Jakarta+Sans', [400,500,600,700]);
+        if (t.fontPair === 'jakarta') ensureGoogleFont('IBM+Plex+Mono', [400,500]);
+        if (t.fontPair === 'serif')   ensureGoogleFont('Fraunces', [400,500,600,700]);
+        if (t.fontPair === 'serif')   ensureGoogleFont('JetBrains+Mono', [400,500]);
+        if (t.fontPair === 'inter')   ensureGoogleFont('Inter', [400,500,600,700]);
+        document.documentElement.style.setProperty('--ff-sans', pair.sans);
+        document.documentElement.style.setProperty('--ff-mono', pair.mono);
+      }, [t.fontPair]);
+
+      // Density
+      React.useEffect(() => {
+        document.body.setAttribute('data-density', t.density);
+      }, [t.density]);
+
+      return (
+        <TweaksPanel title="Tweaks">
+          <TweakSection label="Palette" />
+          <TweakColor
+            label="Palette"
+            value={t.palette}
+            options={[
+              ['#fafaf7', '#0a0a0a', '#1d4ed8'],     // Default — light cream + royal
+              ['#ffffff', '#0a0a0a', '#d97757'],     // Warm — white + terracotta
+              ['#f4f1ec', '#1a1814', '#3d5a3d'],     // Earthy — bone + forest
+              ['#0e0e10', '#ededed', '#d4a574'],     // Dark — graphite + amber
+              ['#0a0a0a', '#fafaf7', '#1d4ed8'],     // Dark — black + royal
+            ]}
+            onChange={(v) => setTweak({ palette: v, accent: v[2] })}
+          />
+
+          <TweakSection label="Accent" />
+          <TweakColor
+            label="Accent color"
+            value={t.accent}
+            options={['#1d4ed8', '#d97757', '#3d5a3d', '#d4a574', '#7c3aed', '#0a0a0a']}
+            onChange={(v) => setTweak('accent', v)}
+          />
+
+          <TweakSection label="Typography" />
+          <TweakSelect
+            label="Font pairing"
+            value={t.fontPair}
+            options={[
+              { value: 'geist',   label: 'Geist + Geist Mono' },
+              { value: 'inter',   label: 'Inter + JetBrains Mono' },
+              { value: 'jakarta', label: 'Plus Jakarta + IBM Plex' },
+              { value: 'serif',   label: 'Fraunces + JetBrains Mono' },
+            ]}
+            onChange={(v) => setTweak('fontPair', v)}
+          />
+
+          <TweakSection label="Layout" />
+          <TweakRadio
+            label="Density"
+            value={t.density}
+            options={['compact', 'regular', 'comfy']}
+            onChange={(v) => setTweak('density', v)}
+          />
+        </TweaksPanel>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('tweaks-root'));
+    root.render(<App />);
+  </script>
 </body>
 </html>
