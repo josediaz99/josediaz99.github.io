@@ -379,6 +379,65 @@ section + section {
   height: 2px;
   background: var(--accent);
 }
+/* Full-row cards: span the grid and flow long bullet lists into two columns */
+.card.wide { grid-column: 1 / -1; }
+
+@media (min-width: 881px) {
+  .card.wide .bullets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap: 6px;
+  }
+}
+
+/* Projects: fluid wrapping layout — cards share each row equally and
+   stretch to fill leftover space (e.g. an odd card out takes the full row) */
+#projects .cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+#projects .card,
+#projects .card.wide {
+  flex: 1 1 min(100%, 440px);
+  min-width: 0;
+}
+
+#projects .card.wide .bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* A card stretched across a full row flows its bullets into two columns */
+@media (min-width: 881px) {
+  #projects .card:last-child:nth-child(odd) .bullets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap: 6px;
+  }
+}
+
+#projects .card-body { min-width: 0; }
+
+#projects .card-head .left { min-width: 0; flex: 1 1 auto; }
+
+#projects .card-head h3,
+#projects .card .summary,
+#projects .card .bullets {
+  overflow-wrap: anywhere;
+}
+
+#projects .tag { white-space: normal; }
+
+@media (max-width: 560px) {
+  #projects .card { --card-pad: 20px; }
+  #projects .card-head { flex-direction: column; gap: 6px; }
+}
+
 .card.no-image .link-out { display: none; }
 .card.no-image .card-body { padding-top: calc(var(--card-pad) + 4px); }
 
@@ -420,6 +479,27 @@ section + section {
   background: var(--bg);
   padding: 6px 10px;
   border: 1px solid var(--line);
+}
+
+/* Full-width card: image beside content, stacked below it on narrow screens */
+.card-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.card-split .thumb {
+  border-right: 1px solid var(--line);
+  border-bottom: 0;
+}
+
+@media (max-width: 880px) {
+  .card-split { grid-template-columns: 1fr; }
+  .card-split .thumb {
+    order: 2;
+    border-right: 0;
+    border-top: 1px solid var(--line);
+  }
 }
 
 .card-body {

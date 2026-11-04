@@ -155,8 +155,8 @@
           </article>
           <!--Everyone Can Code Participant-->
           <article class="card" style="grid-column: 1 / -1;">
-            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:0;">
-              <div class="thumb" style="border-right:1px solid var(--line); border-bottom:0;">
+            <div class="card-split">
+              <div class="thumb">
                 <img src="images\everyoneCanCode2019.avif" alt="Everyone Can Code Chicago 2019" />
               </div>
               <div class="card-body">
@@ -213,37 +213,7 @@
         </header>
 
         <div class="cards">
-
-          <article class="card no-image">
-            <a class="link-out" href="https://github.com/josediaz99/tripLog/tree/master" target="_blank" rel="noopener" aria-label="View on GitHub">↗</a>
-            <div class="card-body">
-              <div class="card-head">
-                <div class="left">
-                  <h3><a href="https://github.com/josediaz99/tripLog/tree/master" target="_blank" rel="noopener">Trip Log</a></h3>
-                  <div class="org">Full-stack MVC web app</div>
-                </div>
-                <div class="date">2025</div>
-              </div>
-              <div class="summary">
-                <p>
-                  Plan, organize, and document travel experiences. Structured tools for managing destinations, accommodations, 
-                  and activities in one place &mdash; persisted via EF Core to SQL Server.</p>
-              </div>
-              <ul class="bullets">
-                <li><span>CRUD for destinations, accommodations, activities.</span></li>
-                <li><span>Designed relational schema; ORM-based data access via EF Core.</span></li>
-                <li><span>Responsive UI built with Bootstrap and Razor views.</span></li>
-              </ul>
-              <div class="stack">
-                <span class="tag">ASP.NET Core 8</span>
-                <span class="tag">C#</span>
-                <span class="tag">EF Core</span>
-                <span class="tag">SQL Server</span>
-                <span class="tag">Bootstrap</span>
-              </div>
-            </div>
-          </article>
-
+          <!--Intrusion Detection System-->
           <article class="card no-image">
             <a class="link-out" href="https://github.com/josediaz99/IntrusionDetectionSystem" target="_blank" rel="noopener" aria-label="View on GitHub">↗</a>
             <div class="card-body">
@@ -259,10 +229,9 @@
                   the CIC-IDS2017 benchmark to distinguish benign from malicious patterns.</p>
               </div>
               <ul class="bullets">
-                <li><span>Designed an ETL pipeline for ingest and preprocessing.</span></li>
-                <li><span>Recursive feature reduction + standardization on cleaned flows.</span></li>
-                <li><span>Trained &amp; evaluated XGBoost and Logistic Regression for binary detection.</span></li>
-                <li><span>Documented engineering decisions via ADRs for reproducibility.</span></li>
+                <li><span><strong>End-to-end data pipeline:</strong> Designed and implemented a data pipeline for preprocessing, feature engineering, model training and evaluation.</span></li>
+                <li><span><strong>Feature Engineering:</strong> Handle missing and null values, normalized features and selected relevant features.</span></li>
+                <li><span><strong>Documentation:</strong> Documented engineering decisions via ADRs for reproducibility.</span></li>
               </ul>
               <div class="stack">
                 <span class="tag">Python</span>
@@ -273,8 +242,8 @@
               </div>
             </div>
           </article>
-
-          <article class="card no-image wide" style="grid-column: 1 / -1;">
+          <!--NLP experiment suite-->
+          <article class="card no-image wide">
             <a class="link-out" href="https://github.com/josediaz99/NLP_tool_analysis" target="_blank" rel="noopener" aria-label="View on GitHub">↗</a>
             <div class="card-body">
               <div class="card-head">
@@ -292,7 +261,7 @@
                 <li><span><strong>Vectorizer analysis:</strong> Bag-of-Words vs. TF-IDF vs. Word2Vec.</span></li>
                 <li><span><strong>Deep learning:</strong> LSTM vs. BiLSTM (TensorFlow/Keras).</span></li>
                 <li><span><strong>Summarizer impact:</strong> original vs. summarized review prediction behavior.</span></li>
-                <li><span>End-to-end pipeline: extraction, tokenization, stop-word removal, stemming, padding, training, eval.</span></li>
+                <li><span><strong>End-to-end pipeline:</strong> extraction, tokenization, stop-word removal, stemming, training and evaluation.</span></li>
               </ul>
               <div class="stack">
                 <span class="tag">Python</span>
@@ -304,8 +273,8 @@
               </div>
             </div>
           </article>
-
-          <article class="card no-image wide" style="grid-column: 1 / -1;">
+          <!--2d arcade survival game chicken survival-->
+          <article class="card no-image wide">
             <a class="link-out" href="https://github.com/josediaz99/tkinter_ChickenSurvival" target="_blank" rel="noopener" aria-label="View on GitHub">↗</a>
             <div class="card-body">
               <div class="card-head">
@@ -332,24 +301,8 @@
                   the angle using trigonometry and simple push back mechanics.
                 </span></li>
                 <li><span>
-                  <strong>Health & Powerups: </strong>Manage a 10-heart health system with spawning heart 
-                  powerups that regenerate player health on collision.
-                </span></li>
-                <li><span>
                   <strong>Collision Detection: </strong>Built robust collision detection for barriers, 
                   player enemy proximity and item collection to ensure smooth gameplay.
-                </span></li>
-                <li><span>
-                  <strong>Animated Sprites: </strong>Created animations for player and enemy characters, 
-                  UI elements with frame based sprite swapping.
-                </span></li>
-                <li><span>
-                  <strong>Audio Integration: </strong>Integrated pygame mixer for dynamic sound effects 
-                  for attack, coins, and other game events.
-                </span></li>
-                <li><span>
-                  <strong>Controls: </strong>Responsve keyboard input system with directional movements 
-                  and attack mechanics.
                 </span></li>
               </ul>
               <div class="stack">
@@ -360,8 +313,8 @@
               </div>
             </div>
           </article>
-
-          <article class="card no-image">
+          <!--2d platformer forbidfden chicken-->
+          <article class="card no-image wide">
             <a class="link-out" href="https://github.com/josediaz99/ForbiddenChicken/tree/master" target="_blank" rel="noopener" aria-label="View on GitHub">↗</a>
             <div class="card-body">
               <div class="card-head">
@@ -380,40 +333,16 @@
                   development with hardware-accelerated rendering and scene graph architecture
                 </span></li>
                 <li><span>
-                  <strong>Physics Engine:</strong> Implemented gravity-based physics system with tuned constants (gravit
-                  y: 800 px/s², jump velocity: -400 px/s) and delta-time calculations for frame-rate independent movement
+                  <strong>Physics Engine:</strong> Implemented gravity-based physics system with tuned constants (gravity:
+                  800 px/s², jump velocity: -400 px/s) and delta-time calculations for frame-rate independent movement
                 </span></li>
                 <li><span>
-                  <strong>Sprite Sheet Animation:</strong> Created frame-based sprite animation system using viewport cl
-                  ipping on 2x2 sprite grid sheets with directional character states (standing, jumping, left, right)
+                  <strong>Input Handling:</strong> Implemented responsive keyboard event system with key press/release
+                  tracking for smooth acceleration, deceleration, and multi-directional input support
                 </span></li>
                 <li><span>
-                  <strong>Input Handling:</strong> Implemented responsive keyboard event system with key press/release t
-                  racking for smooth acceleration, deceleration, and multi-directional input support
-                </span></li>
-                <li><span>
-                  <strong>Game Loop Architecture:</strong> Built core game loop using AnimationTimer for high-precision 
-                  delta-time updates with separate entity update cycles for player, balls, and collision checks
-                </span></li>
-                <li><span>
-                  <strong>Collision Detection:</strong> Implemented predictive collision system calculating player traje
-                  ctory overlap with platform geometry to detect landings during descent
-                </span></li>
-                <li><span>
-                  <strong>Double Jump Mechanic:</strong> Engineered momentum-based double-jump system triggered by ball 
-                  drops with state management flags for in-air mechanics
-                </span></li>
-                <li><span>
-                  <strong>Persistent Leaderboard:</strong> Integrated Java Preferences API for local persistent score st
-                  orage with CSV serialization and top-5 score filtering using streams
-                </span></li>
-                <li><span>
-                  <strong>UI Architecture:</strong> Designed dual-scene application using BorderPane layouts with HUD el
-                  ements (timer, score, health display) and seamless scene transitions
-                </span></li>
-                <li><span>
-                  <strong>Maven Build System:</strong> Configured Maven project with JavaFX Maven plugin for cross-platf
-                  orm packaging and optimized builds with Java 24 target compilation
+                  <strong>Collision Detection:</strong> Implemented predictive collision system calculating player
+                  trajectory overlap with platform geometry to detect landings during descent
                 </span></li>
               </ul>
               <div class="stack">
@@ -459,11 +388,12 @@
             <div class="num">→ 03.02</div>
             <h3>Databases</h3>
             <ul>
-              <li><span class="ix">01</span><span>PostgreSQL</span></li>
-              <li><span class="ix">02</span><span>MySQL</span></li>
+              <li><span class="ix">01</span><span>PostgreSQL &amp; PgAdmin</span></li>
+              <li><span class="ix">02</span><span>MySQL &amp; phpMyAdmin</span></li>
               <li><span class="ix">03</span><span>SQL Server</span></li>
               <li><span class="ix">04</span><span>MongoDB</span></li>
               <li><span class="ix">05</span><span>Supabase</span></li>
+              <li><span class="ix">06</span><span>Firebase</span></li>
             </ul>
           </div>
 
@@ -475,7 +405,7 @@
               <li><span class="ix">02</span><span>VS Code</span></li>
               <li><span class="ix">03</span><span>IntelliJ IDEA</span></li>
               <li><span class="ix">04</span><span>Jupyter Notebook</span></li>
-              <li><span class="ix">05</span><span>MySQL Workbench</span></li>
+              <li><span class="ix">05</span><span>Cursor</span></li>
               <li><span class="ix">06</span><span>Figma</span></li>
               <li><span class="ix">07</span><span>Excel</span></li>
             </ul>
